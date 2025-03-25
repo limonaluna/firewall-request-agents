@@ -7,6 +7,20 @@ from dotenv import load_dotenv
 
 load_dotenv(override=True)
 
+def classify_cvss_score(cvss_score: float) -> str:
+    """
+    Classifies a CVSS score into high risk, medium risk, or low risk.
+
+    :param cvss_score: The CVSS score to classify.
+    :return: A string indicating the risk level: "High", "Medium", or "Low".
+    """
+    if cvss_score >= 7.0:
+        return "High"
+    elif cvss_score >= 4.0:
+        return "Medium"
+    else:
+        return "Low"
+
 def fetch_datetime(
     format_str: str = "%Y-%m-%d %H:%M:%S",
     unix_ts: int | None = None,
@@ -274,6 +288,7 @@ def send_email(recipient: str, subject: str, body: str) -> str:
     
 # make functions callable a callable set from enterprise-streaming-agent.ipynb
 enterprise_fns: Set[Callable[..., Any]] = {
+    classify_cvss_score,
     fetch_datetime,
     fetch_weather,
     fetch_stock_price,
