@@ -1,0 +1,16 @@
+﻿risk_id;cve_id;description;cvss_score;ports;protocols;ip_ranges;source;last_updated
+R001;;Active Users - On some UNIX machines, creating a TCP connection to this port will dump the active processes and who launched them.;5.0;11;tcp;0.0.0.0/0;Predefined;03/03/2025
+R002;;FTP Data- Unencrypted file transfer;5.0;20;tcp;0.0.0.0/0;Predefined;03/03/2025
+R003;;FTP Control- Unencrypted file transfer;5.0;21;tcp;0.0.0.0/0;Predefined;03/03/2025
+R004;;SSH - Brute force risk is exposed;7.5;22;tcp;0.0.0.0/0;Predefined;03/03/2025
+R005;;Telnet - Unecnrypted, deprecated;9.0;23;tcp;0.0.0.0/0;Predefined;03/03/2025
+R006;;SMTP - Often targeted for spam and phishing attacks;8.0;25;tcp;0.0.0.0/0;Predefined;03/03/2025
+R007;;DNS - Can be exploited for DNS amplification attacks;8.0;53;udp;0.0.0.0/0;Predefined;03/03/2025
+R008;;HTTP - Unecnrypted traffic;4.0;80;tcp;0.0.0.0/0;Predefined;03/03/2025
+R009;;POP3 - Like FTP, it transmits data in plain text;4.0;110;tcp;0.0.0.0/0;Predefined;03/03/2025
+R010;;IMAP - Another email protocol that transmits data in plain text;4.0;143;tcp;0.0.0.0/0;Predefined;03/03/2025
+R011;;SMB - Wormable exploits;9.0;445;tcp;0.0.0.0/0;Predefined;03/03/2025
+R012;;RDP - Remote exploit risk;8.0;3389;tcp;0.0.0.0/0;Predefined;03/03/2025
+R013;;OpenVPN - VPN misconfig risk;6.0;1194;udp;0.0.0.0/0;Predefined;03/03/2025
+R014;;PPTP VPN - Weak encryption;7.0;1723;tcp;0.0.0.0/0;Predefined;03/03/2025
+R015;;HTTP Alt - Often unprotected;5.0;8080;tcp;0.0.0.0/0;Predefined;03/03/2025
